@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error</title>
+</head>
+<body>
+  
+  <script>
+    let err = new Error("faild!");
+    let arr = [20, 50, 100, 80];
+    try{
+      let sum = 0;
+      for(let i = 0; i < arr.length; i++){
+        sum+=i;
+      }
+
+      if(sum<100){
+        throw err;
+      }
+    }
+    catch{
+      console.log("sum less than 100");
+      console.log(err);
+    }
+  </script>
+</body>
+</html>

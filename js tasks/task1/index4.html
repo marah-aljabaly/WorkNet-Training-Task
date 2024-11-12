@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task1 - 4</title>
+</head>
+<body>
+  
+  <script>
+    let start = parseInt(prompt("Enter the start number: "));
+    let end = parseInt(prompt("Enter the end number: "));
+    alert(`All odd number between [${start} , ${end}] are: ${odd(start,end)}`);
+
+    // console.log(odd(start,end))
+
+    
+    
+    function odd(start , end){
+      let oddNum = [];
+      for(let i = start ; i < end ; i++){
+        if(i%2 != 0) {
+          oddNum.push(i);
+        }
+      }
+      return oddNum;
+    }
+  </script>
+</body>
+</html>

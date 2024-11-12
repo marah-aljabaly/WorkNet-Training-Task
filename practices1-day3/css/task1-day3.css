@@ -1,0 +1,128 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  text-transform: capitalize;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+header{
+  background-color: rgb(61, 121, 123);
+  height: 200px;
+  align-content: center;
+  margin: 0;
+}
+header img{
+  width: 18%;
+  display: block;
+  margin: 0 auto;
+}
+
+nav{
+  background-color:rgb(82, 155, 158) ;
+  margin: 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+}
+nav ul li{
+  padding-right: 50px;
+  list-style: none;
+}
+
+.right{
+  background-color:rgb(125, 192, 194);
+  position: relative;
+  padding-left: 38%;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  height: 780px;
+}
+.right h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.right ul{
+  line-height: 40px;
+  padding-left: 10%;
+}
+span {
+  font-weight: 550;
+}
+.right ol li{
+  list-style: upper-roman;
+  list-style-position: inside;
+}
+
+.left{
+  background-color:rgb(105, 130, 131);
+  position: absolute;
+  left: 0;
+  top: 250px;
+  z-index: 1;
+  width: 35%;
+  padding: 20px;
+}
+.left .login{
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 20px 40px;
+  box-shadow: 5px 5px 5px #4e4d4d;
+}
+.user-name,
+.password{
+  margin-bottom: 15px;
+}
+#name,
+#password{
+  margin-top: 5px;
+}
+img{
+  width: 100%;
+}
+.btn button{
+  width: 120px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+}
+.pages-link{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.pages-link button{
+  margin-top: 10px;
+  width: 120px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+}
+iframe{
+  width: 100%;
+}
+
+
+footer{
+  background-color: rgb(57, 87, 88);
+  height: 40px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  left: 0;
+  bottom: -385px;
+  z-index: 2;
+  display: inline;
+  text-align: center;
+  padding-top: 8px;
+}

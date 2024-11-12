@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+
+  <style>
+    input{
+      outline: none;
+      caret-color: blue;
+      padding: 0.3rem;
+    }
+    input:focus{
+      border: 1px solid blue;
+    }
+    #nameError, #passwordError{
+      color: red;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <form action=".//welcom3.html" method="get">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+    <span id='nameError'></span><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+    <label for="city">City:</label>
+    <select id="city" name="city">
+      <option value="none">none</option>
+      <option value="gaza">Gaza</option>
+      <option value="bethlehem">Bethlehem</option>
+      <option value="deirAlBalah">Deir al-Balah</option>
+      <option value="hebron">Hebron</option>
+      <option value="khanYunis">Khan Yunis</option>
+      <option value="alQuds">Al Quds</option>
+      <option value="ramallah">Ramallah</option>
+    </select><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="password" required><br><br>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" placeholder="password" name="confirmPassword" required> <span id="passwordError"></span><br><br>
+
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">“I accept the terms and conditions”</label><br><br>
+
+    <button id="submit-btn">Submit</button>
+  </form>
+
+  <script>
+    //onfocus event => will be triggered when the form is focused and the user selects the input 
+    document.getElementById('name').onfocus = function(){
+      this.style.border = "1px solid blue";
+    };
+
+    // onblur event => will be triggered when the form loses the focused
+    document.getElementById('name').onblur = function(){
+     validateName();
+    };
+    document.getElementById('confirmPassword').onblur = function(){
+      validatePasswords();
+    };
+
+    let btn = document.getElementById('submit-btn');
+    
+
+    function validateName() {
+      const nameInput = document.getElementById('name');
+      const nameError = document.getElementById('nameError');
+      if ( nameInput.value.length < 3 || nameInput.value == "") {
+        nameError.innerHTML = 'Invalid name';
+        nameInput.style.backgroundColor = "gray";
+        nameInput.style.color = "white";
+        btn.setAttribute('disabled', 'disabled');
+        // nameInput.focus();
+        // nameInput.select();
+      } else {
+        nameError.innerHTML = "";
+        nameInput.style.backgroundColor = "white";
+        nameInput.style.color = "black";
+        btn.removeAttribute('disabled');
+      }
+    }
+
+    function validatePasswords() {
+      const password = document.getElementById('password');
+      const confirmPassword = document.getElementById('confirmPassword');
+      const passwordError = document.getElementById('passwordError');
+
+      if (password.value != confirmPassword.value) {
+        passwordError.innerHTML = "Password and repeat password should be the same";
+        confirmPassword.style.backgroundColor = "gray";
+        confirmPassword.style.color = "white";
+        btn.setAttribute('disabled', 'disabled');
+      }
+      else {
+        passwordError.innerHTML = "";
+        confirmPassword.style.backgroundColor = "white";
+        confirmPassword.style.color = "black";
+        btn.removeAttribute('disabled');
+      }
+    }
+    
+    
+    
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tiger</title>
+
+  <style>
+    img{
+      width: 10rem;
+      position: relative;
+      animation: tigger 15s linear infinite;
+    }
+
+    @keyframes tigger{
+      0%{
+        transform: translateX(80rem);
+      }
+      49%{
+        transform: translateX(0);
+      }
+      50%{
+        transform: rotatey(180deg);
+      }
+      100%{
+        transform: translateX(80rem) rotatey(180deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="../tigger/tiger.gif" alt="">
+</body>
+</html>

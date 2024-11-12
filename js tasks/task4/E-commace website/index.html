@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce</title>
+  <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+  <header>
+    <div class="search">
+      <input type="text" placeholder="What are you looking for?">
+      <button>
+        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+      </button>
+    </div>
+    <div class="right-header">
+      <div class="login">
+        <p>Hello. <a href="#">Log in</a> <i class="fa-solid fa-caret-down" style="color: #868484;"></i></p>
+      </div>
+      <div class="cart">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #1c5ac4;"></i></a>
+        <p>Cart</p>
+        <span id="qunatity">0</span>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="top">
+      <div class="left">
+        <h3>Products</h3>
+        <p>(<span id="items-num"></span> items)</p>
+      </div>
+  
+      <div class="right">
+        <p>Sort by: </p>
+        <select>
+          <option value="best-match">Best Match</option>
+          <option value="best-saller">Best Saller</option>
+          <option value="new-arrival">New Arrival</option>
+          <option value="lowest-price">Lowest Price</option>
+          <option value="heighest-price">Heighest Price</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="products"></div>
+    
+  </main>
+
+
+  <script src="https://kit.fontawesome.com/8e840fc7b4.js" crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>
+  <!-- <script src="..//E-commace website/JS/cart.js"></script> -->
+</body>
+</html>

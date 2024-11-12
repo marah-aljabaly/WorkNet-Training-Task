@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+
+</head>
+<body>
+  
+  <!-- clock -->
+  <button id="startClock">Start Clock</button>
+  <div id="clock"></div>
+
+  <script>
+    const clockElement = document.getElementById('clock');
+    const startClockButton = document.getElementById('startClock');
+
+
+    let date = new Date();
+    let time = date.toLocaleTimeString();
+
+
+    startClockButton.addEventListener('click',()=>{
+      if(startClockButton.innerHTML == 'Start Clock'){
+      alert('Clock started!');
+      clockElement.innerHTML = time;
+      
+      // Update every second
+      setInterval(function() {
+        date = new Date();
+        time = date.toLocaleTimeString();
+        clockElement.innerHTML = time;
+      }, 1000);
+
+      startClockButton.innerText = 'Stop Clock';
+      }
+      else{
+        alert('Clock stoped!');
+        clockElement.style.display = 'none';
+        startClockButton.innerText = 'Start Clock';
+      } 
+      
+
+      //*************another solution*****************
+      // if(clockElement.style.display == 'none'){
+      //   clockElement.style.display = 'block';
+      //   alert('Clock started!');
+      //   clockElement.innerHTML = time;
+        
+      //   // Update every second
+      //   setInterval(function() {
+      //     date = new Date();
+      //     time = date.toLocaleTimeString();
+      //     clockElement.innerHTML = time;
+      //   }, 1000);
+      // }
+      // else{
+      //   alert('Clock stoped!');
+      //   clockElement.style.display = 'none';
+      // } 
+    })
+
+    
+  </script>
+</body>
+</html>

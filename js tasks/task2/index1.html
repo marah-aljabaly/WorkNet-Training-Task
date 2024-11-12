@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGEX</title>
+</head>
+<body>
+  
+
+  <script>
+   
+    let userEmail = prompt("Enter your email:")
+    let regex2 = /[a-zA-Z0-9_.±]+@[a-zA-Z0-9-]+\w[.com.eg | .edu.eg | .net.eg | .org.eg]/gi;
+    let matchUserEmail = userEmail.match(regex2);
+    while(matchUserEmail == null){
+      userEmail = prompt("Enter your email:");
+      matchUserEmail = userEmail.match(regex2);
+    }
+
+    // [a-zA-Z][\s]
+    let userFullName = prompt("Enter your full name:");
+    let regex1 = /\w[a-zA-Z ] + [ ] + \w[a-zA-Z]/gi;
+    let matchUserName = userFullName.match(regex1);
+    while(matchUserName == null){
+      userFullName = prompt("Enter your full name:");
+      matchUserName = userFullName.match(regex1);
+    }
+    
+   
+  </script>
+</body>
+</html>

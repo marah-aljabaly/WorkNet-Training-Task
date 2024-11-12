@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration page</title>
+  <link rel="stylesheet" href="css/task2-day3.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registration page</h1>
+    <hr>
+    <div>
+      <label for="#user-id">User ID: (hidden field)</label> <br>
+      <input type="hidden" id="user-id" placeholder="ID" name="user-id"> <br>
+    </div>
+  
+    <div>
+      <label for="#fname">First Name: </label>
+      <input type="text" id="fname" name="fname" placeholder="First Name" required> <br>
+    </div>
+  
+    <div>
+      <label for="#lname">Last Name: </label>
+      <input type="text" id="lname" name="lname" placeholder="Last Name" required> <br>
+    </div>
+  
+    <div>
+      <label for="#email">Email: </label>
+      <input type="email" id="email" name="email" placeholder="Email" required> <br>
+    </div>
+  
+    <div>
+      <label for="#password">Password: </label>
+      <input type="password" id="password" name="password" placeholder="Password"> <br>
+    </div>
+  
+    <div>
+      <label for="#re-password">Repeat Password: </label>
+      <input type="password" id="re-password" name="re-password" placeholder="Password">
+    </div>
+  
+    <div>
+      <label for="#birth-date">Birth Date: </label>
+      <input type="date" name="birth-date" id="birth-date" placeholder="Birth Date">
+    </div>
+  
+    <div>
+      <label for="#picture">User Picture: </label>
+      <input type="file" name="user-picture" id="picture">
+    </div>
+  
+    <div>
+      <label>Gender: </label>
+      <fieldset>
+        <input type="radio" name="gender" id="female"> 
+        <label for="female">Female</label><br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+      </fieldset>
+    </div>
+  
+    <div>
+      <label for="faculty">Faculty: </label>
+      <select name="selection" id="faculty">
+        <option value="none">none</option>
+        <option value="engineering">Engineering</option>
+        <option value="Arts-and-Social Sciences">Arts and Social Sciences</option>
+        <option value="business-administration">Business Administration</option>
+        <option value="science">Science</option>
+        <option value="technology">Technology</option>
+        <option value="medicine">medicine</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="interests">Interests: </label><br>
+      <fieldset>
+        <input type="checkbox" id="programming">
+        <label for="programming">Programming</label> <br>
+        <input type="checkbox" id="reading">
+        <label for="reading">Reading</label> <br>
+        <input type="checkbox" id="swimming">
+        <label for="swimming">Swimming</label> <br>
+        <input type="checkbox" id="etc">
+        <label for="etc">etc...</label>
+      </fieldset>
+    
+    </div>
+  
+  
+    <div>
+      <label for="about">About You: </label> <br>
+      <textarea name="about-you" id="about"></textarea>
+    </div>
+  
+    <div>
+      <input type="checkbox" id="terms">
+      <label for="terms">
+        <a href="#" target="_blank">I agreed to terms and condition</a>
+      </label>
+    </div>
+  
+    <div>
+      <button>Submit</button>
+      <button>Reset</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home page</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      /* justify-content: space-between; */
+      margin: 1rem;
+    }
+    .left{
+      width: 15rem;
+    }
+    .image-logo{
+      width: 50%;
+    }
+    .image-logo img{
+      width: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+    
+    ul li{
+      list-style: none;
+      margin-top: 1rem;
+      margin-left: 2.5rem;
+    }
+    .right{
+      width: 45rem;
+    }
+    .image-main{
+      width: 100%;
+    }
+    .image-main img{
+      width: 100%;
+      object-fit: cover;
+    }
+    .right p{
+      font-size: .9rem;
+      margin-top: 2rem;
+    }
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .item{
+      width: 14rem;
+      margin-right: 1rem;
+    }
+    .image{
+      width: 100%;
+    }
+    .image img{
+      width: 100%;
+      object-fit: contain;
+    }
+    .item h3{
+      margin-top: 0.5rem;
+    }
+    .item p{
+      margin-top: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="image-logo">
+        <img src="..//task1/صورة.jpg" alt="">
+      </div>
+      <div class="liks">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>More</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="image-main">
+        <img src="..//task1/تنزيل (1).jpg" alt="">
+      </div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem laborum modi alias esse! At quod neque, nobis aspernatur earum maiores voluptates ducimus, dolorem consequatur vero</p>
+      <div class="items">
+        <div class="item">
+          <div class="image">
+            <img src="..//task1/تنزيل (1).jpg" alt="">
+          </div>
+          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae soluta facere omnis provident, ullam ratione perspiciatis</p>
+        </div>
+
+        <div class="item">
+          <div class="image">
+            <img src="..//task1/تنزيل (1).jpg" alt="">
+          </div>
+          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae soluta facere omnis provident, ullam ratione perspiciatis</p>
+        </div>
+
+        <div class="item">
+          <div class="image">
+            <img src="..//task1/تنزيل (1).jpg" alt="">
+          </div>
+          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae soluta facere omnis provident, ullam ratione perspiciatis</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

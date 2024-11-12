@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(245, 244, 244);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+}
+.card{
+  width: 40%;
+  display: flex;
+  border: 3px solid lightblue;
+  padding: 0.5%;
+  margin-bottom: 3%;
+}
+.left{
+  width: 40%;
+  background-color: rgb(217, 235, 241);
+  border: 2px solid lightblue;
+  position: relative;
+}
+img{
+  width: 70%;
+  position: absolute;
+  top: 21%;
+  left: 15%;
+}
+.lable{
+  position: absolute;
+  top: 5%;
+  right: 13%;
+  color: aliceblue;
+  background-color: brown;
+  font-size: 1rem;
+  padding: 0.6rem;
+  border-radius: 50%;
+}
+.green-lable{
+  background-color:green;
+}
+.right{
+  width: 60%;
+  padding-left: 5%;
+}
+.right .top-info-product{
+  margin-top: 7%;
+  margin-bottom: 6%;
+}
+h4{
+  font-size: 1.2rem;
+  color: rgb(84, 176, 245);
+  cursor: pointer;
+}
+.category{
+  font-size: 1.1rem;
+  color: rgb(141, 139, 139);
+  cursor: pointer;
+}
+.price{
+  font-size: 2rem;
+  color: rgb(124, 199, 223);
+}
+.right .bottom-info-product .description{
+  margin-top: 3%;
+  margin-bottom: 6%;
+  font-size: 1.1rem;
+}
+.right .bottom-info-product button{
+  width: 7rem;
+  height: 2rem;
+  margin-left: 5%;
+  margin-bottom: 4%;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.bottom-info-product .red-btn{
+  background-color: rgb(179, 21, 21);
+}
+.bottom-info-product .blue-btn{
+  background-color: rgba(12, 43, 142, 0.845);
+}
+.right .bottom-info-product .rating{
+  margin-bottom: 3%;
+}
+.right .bottom-info-product .rating i{
+  font-size: 0.8rem;
+  color: rgb(200, 8, 8);
+  cursor: pointer;
+}
+
+.left:hover img{
+  animation: product-hover 3s ease;
+  z-index: 1;
+}
+button:hover{
+  opacity: 0.8;
+}
+
+@keyframes product-hover{
+  0%{
+    transform: scale(1.5);
+    transform: rotate(180deg);
+  }
+  50%{
+    transform: scale(1.5)
+  }
+  100%{
+    transform: scale(1);
+    transition: all 1s ease;
+  }
+}

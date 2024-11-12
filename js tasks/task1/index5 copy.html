@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task1 - 5</title>
+
+  <style>
+    div{
+      margin-top: 1.5rem;
+      margin-left: 2rem;
+    }
+    span{
+      text-decoration: underline;
+      font-size: 1.4rem;
+      margin-right: 0.3rem;
+    }
+    p{
+      display: inline;
+      font-size: 1.4rem;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span>Name:</span>
+    <p class="name"></p>
+  </div>
+
+  <div>
+    <span>Birth year:</span>
+    <p class="birth-year"></p>
+  </div>
+
+  <div>
+    <span>Age:</span>
+    <p class="age"></p>
+  </div>
+
+
+  <script>
+    //we can use do-while or while loop
+    let name;
+    do {
+      name = prompt("Enter your name: ");
+    }
+    while(!isNaN(name));
+
+    let birthYear = parseInt(prompt("Enter your birth year: "));
+    while(isNaN(birthYear) || birthYear > 2010){
+      birthYear = parseInt(prompt("Enter your birth year: "));
+    }
+
+    let currentYear = new Date().getFullYear();
+
+    document.querySelector(".name").innerText = name;
+    document.querySelector(".birth-year").innerText = birthYear;
+    document.querySelector(".age").innerText = currentYear - birthYear;
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="parentNode"></div>
+ <script>
+  let parentNode = document.getElementById('parentNode');
+
+  //creat img node by using appendChild
+  let img = document.createElement("img");
+  img.setAttribute("src","صورة.jpg");
+  img.width = 300;
+  parentNode.appendChild(img);
+
+  //creat img node by using insertBefore
+  let img2 = document.createElement("img");
+  img2.setAttribute("src","صورة.jpg");
+  img2.width = 200;
+  parentNode.insertBefore(img2,img);
+
+  //show the number of the node in the parentNode befor remove a child
+  alert(`The number of child nodes in the div: ${parentNode.childNodes.length}`)
+
+  //remove child element 
+  // parentNode.removeChild(img2);
+
+  //show the number of the node in the parentNode after remove a child
+  alert(`The number of child nodes in the div: ${parentNode.childNodes.length}`)
+
+ </script>
+</body>
+</html>

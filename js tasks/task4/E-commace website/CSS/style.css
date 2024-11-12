@@ -1,0 +1,211 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: #ffffff;
+  padding: 1rem;
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 100;
+}
+header .search{
+  width: 60%;
+  display: inline-block; 
+  margin-right: 11rem;
+}
+header .search input[type="text"]{
+  width: 85%;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border: 1ps solid #d1d1d1;
+  outline: none;
+}
+header .search button{
+  background: transparent;
+  background-color: #1c5ac4;
+  border: none;
+  position: relative;
+  left: -0.4rem;
+  padding: 0.58rem 1rem;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  cursor: pointer;
+}
+header .right-header{
+  display: inline-block;
+  color: #868484;
+  font-size: 0.8rem;
+}
+header .right-header .login a{
+  color: #868484;
+  text-decoration: none;
+}
+header .right-header .login i{
+  cursor: pointer;
+}
+header .right-header .login{
+  padding: 0.3rem 0.5rem;
+  border-right:1.2px solid #d1d1d1;
+  display: inline-block;
+}
+header .right-header .cart{
+  padding-left: 0.3rem;
+  position: relative;
+  display: inline-block;
+}
+header .right-header .cart #qunatity{
+  position: absolute;
+  top: -16px;
+  right: 6px;
+  color: red;
+  font-size: 1.1rem;
+}
+header .right-header .cart i{
+  font-size: 1.3rem;
+}
+header .right-header .cart p{
+  position: absolute;
+  top: 0px;
+  right: -35px;
+  color: black;
+  font-weight: 550;
+  font-size: 0.9rem;
+}
+
+
+main{
+  background-color: #adadad3d;
+  padding: 2rem;
+}
+main .top{
+  display: inline-block;
+  margin-top: 7%;
+}
+main .top .left{
+  display: inline-block;
+  margin-right: 38rem;
+}
+main .top .right{
+  display: inline-block;
+}
+main p, h3{
+  display: inline;
+}
+main .top select{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #1c5ac4;
+  font-weight: 550;
+  font-family: 0.9rem;
+  cursor: pointer;
+}
+
+
+
+main .products{
+  display: inline-block;
+  margin-top: 1rem;
+}
+.product{
+  display: inline-block;
+  background-color: #ffffff;
+  width: 13.4rem;
+  padding: 0.5rem;
+  border: 1px solid rgb(210, 208, 208);
+  margin-bottom: 0.2rem;
+}
+.product .imag{
+  width: 100%;
+  cursor: pointer;
+}
+.product .imag:hover{
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.product .imag img{
+  width: 60%;
+  height: 10rem;
+  margin: 0.5rem 3rem;
+}
+.product .title{
+  height: 4.6rem;
+  font-weight: 550;
+  font-size: 0.9rem;
+  margin-top: 1.3rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.product .price-and-rating{
+  margin-bottom: 0.2rem;
+}
+.price{
+  font-size: medium;
+  display: inline-block;
+  color: #1c5ac4;
+}
+.product .product-info{
+  margin-bottom: 3rem;
+}
+.product .product-info .rating{
+  display: inline;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-left: 4.1rem;
+}
+.product .product-info .pre-price{
+  display: block;
+  text-decoration: line-through;
+  color: #868484;
+  font-size: 0.9rem;
+}
+.product-info .shipping{
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+.product .product-info a{
+  font-weight: 550;
+  font-size: 0.75rem;
+  color: #379a39;
+  text-decoration: none;
+}
+.product .product-info a:hover{
+  color: #277729;
+}
+.product .product-info a:active{
+  color: #277729;
+}
+.product .product-info a:visited{
+  color: #277729;
+}
+.product .check-add{
+  display: none;
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+}
+.product button{
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  background-color: rgb(125, 164, 66);
+  color: #ffffff;
+  border-radius: 2px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+.product button:hover{
+  background-color: rgb(105, 148, 47);
+  transition: all 0.3s ease;
+}

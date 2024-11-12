@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch API Example</title>
+</head>
+<body>
+  <select id="userList"></select>
+  <button id="showUser" disabled>Show User Details</button>
+  <div id="userDetails"></div>
+
+  <script>
+    async function fetchUsers() {
+      try {
+        const response = await fetch('https://api.escuelajs.co/api/v1/users');
+        const users = await response.json();
+        
+        const userList = document.getElementById('userList');
+        
+        users.forEach(user => {
+          const option = document.createElement('option');
+          option.value = user.id;
+          option.innerHTML = `${user.name}`;
+          userList.appendChild(option);
+        });
+              
+        // Enable the button after users are loaded
+        document.getElementById('showUser').disabled = false;
+      }
+
+      catch (error) {
+        console.error('Error fetching users:', error);
+      }
+    }
+      
+    document.getElementById('showUser').addEventListener('click', function() {
+      const userList = document.getElementById('userList');
+      const selectedUserId = userList.value;
+      
+      if (selectedUserId) {
+        document.getElementById('userDetails').innerHTML = `
+        <h2>User Details</h2>
+        <p>User ID: ${selectedUserId}</p>
+        <p>Name: ${userList.options[userList.selectedIndex].text}</p>
+        `;
+      } else {
+        alert('Please select a user.');
+      }
+    });
+    
+    // Call the function to fetch users on page load
+    fetchUsers();
+  </script>
+</body>
+</html>

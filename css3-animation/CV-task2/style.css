@@ -1,0 +1,242 @@
+body{
+  margin: 0;
+}
+*{
+  margin: 0;
+}
+header{
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 1rem 1rem 0;
+}
+.image{
+  background-color: aliceblue;
+  border-radius: 50%;
+  margin: 1rem 15rem 1rem 15rem;
+}
+.image img{
+  width: 5rem;
+  margin: 1.2rem;
+}
+.info{
+  color: white;
+  margin-right: 10rem;
+  font-family: sans-serif;
+}
+.info h3{
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+.info h6{
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+.top,
+.middle,
+.end{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-top: 1.3rem;
+}
+.contact,
+.language,
+.left{
+  width: 50%;
+  margin: 1rem 0 2rem 10rem;
+  padding-left: 2rem;
+  color: black;
+}
+.contact-info1,
+.contact-info2,
+.contact-info3,
+.contact-info4{
+  display: inline-block;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+  font-size: 1.1rem;
+}
+.contact-info1 p,
+.contact-info2 p,
+.contact-info3 p,
+.contact-info4 p{
+  display: inline;
+  margin-left: 1rem;
+}
+#contact,
+#lang,
+#skill,
+#online{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 1.2rem;
+}
+.contact a{
+  text-decoration: none;
+  margin-left: 1rem;
+  color: black;
+}
+.achievs,
+.education,
+.experience{
+  width: 50%;
+  margin: 1rem 10rem 2rem 5rem;
+  font-size: 1rem;
+}
+.achievs .tittle,
+.education .tittle,
+.experience .tittle{
+  width: 100%;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+.achive,
+.edu,
+.exp{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: black;
+}
+
+.language{
+  margin-top: -4rem;
+}
+.lang1,
+.lang2,
+.lang3{
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+  font-size: 1.1rem;
+}
+.lang1 p,
+.lang2 p,
+.lang3 p{
+  display: block;
+}
+.rating{
+  margin-top:10px;
+  width: 80%;
+}
+.container-bar{
+  width: 100%;
+  height: 1.1rem;
+  background-color: #d8d5d5ec;
+  text-align: center;
+  color: white;
+}
+.bar1{
+  width: 90%;
+  height: 1.1rem;
+  background-color: orange;
+}
+.bar2{
+  width: 70%;
+  height: 1.1rem;
+  background-color: rgb(17, 14, 83);
+}
+.bar3{
+  width: 1%;
+  height: 1.1rem;
+  background-color: rgb(10, 75, 20);
+}
+
+.skills{
+  margin-top: -8.5rem;
+}
+.container {
+  text-align: center;
+  display: inline-block;
+  width: 20%;
+}
+.skill-rating1,
+.skill-rating2,
+.skill-rating3,
+.skill-rating4{
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 1.5rem;
+  border: 1rem solid #d8d5d5ec;
+  text-align: center;
+}
+.skill-rating1{
+  border-left-color: orange;
+  border-top-color: orange;
+  border-right-color: orange;
+}
+.skill-rating2{
+  border-left-color: rgb(46, 46, 121);
+  border-top-color: rgb(46, 46, 121);
+  border-bottom-color: rgb(46, 46, 121);
+}
+.skill-rating3{
+  border-left-color: rgb(21, 94, 37);
+  border-bottom-color: rgb(21, 94, 37);
+  border-right-color: rgb(21, 94, 37);
+}
+.skill-rating4{
+  border-left-color: rgb(182, 238, 51);
+  border-bottom-color: rgb(182, 238, 51);
+  border-right-color: rgb(182, 238, 51);
+}
+.skill-name{
+  padding-top: 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.online-info{
+  margin-top: 1.5rem;
+}
+#online{
+  margin-left: 1rem;
+}
+.on-info{
+  display: inline-block;
+  margin-left: 5rem;
+  font-size: 1.5rem;
+}
+.on-info p{
+  display: inline;
+}
+.on-info a{
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+ footer{
+  width: 100vw;
+  height: 2rem;
+  display: flex;
+  margin-top: 1rem;
+}
+footer .div1{
+  width: 33.33%;
+  height: 2rem;
+  background-color: #ff6a00;
+  display: inline;
+}
+footer .div2{
+  width: 33.33%;
+  height: 2rem;
+  background-color: #587ec5;
+  display: inline;
+}
+footer .div3{
+  width: 33.33%;
+  height: 2rem;
+  background-color: #16940d;
+  display: inline;
+}

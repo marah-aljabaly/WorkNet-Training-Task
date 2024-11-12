@@ -1,0 +1,122 @@
+/* general style */
+body{
+  background-image: linear-gradient(to right, rgb(148, 192, 230), rgb(81, 230, 195));
+  margin: 0;
+  font-family: sans-serif;
+}
+.card{
+  width: 29%;
+  margin:150px auto;
+  position: relative;
+  background-color: aliceblue;
+  color: gray;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  box-shadow: 5px 5px 8px #23232325
+}
+/* end general style */
+
+
+/* start header style */
+.header p {
+  color: rgb(231, 174, 32); 
+  border: 3px solid rgb(231, 174, 32);
+  border-radius: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bolder;
+  padding: 5px 10px;
+  display: inline;
+}
+.header .dot-icon{
+  display: inline;
+  float: right;
+}
+.header .dot-icon img{
+  width: 25px;
+  opacity: 0.5;
+}
+/* end header style */
+
+
+/* start .pic and .info style */
+.pic img{
+  width: 40%;
+  border-radius: 50%;
+} 
+.pic{
+  position: absolute;
+  /* top: -5.5rem; */
+  bottom: 35rem;
+  right: 1.3rem;
+}
+.pic,
+.info{
+  text-align: center;
+}
+.info{
+  margin-top: 4rem;
+  font-size: 20px;
+}
+.info h2{
+  margin-bottom: 1rem;
+  color: rgb(70, 70, 70);
+}
+.info p{
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  opacity: 0.8;
+}
+.info .links{
+  margin-top: 2rem;
+  opacity: 0.35;
+}
+.info .links img{
+  width: 20px;
+}
+.info .links a{
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+/* end .pic and .info style */
+
+
+/* start .account-info style */
+.account-info{
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+.account-info p {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.shots,
+.followers,
+.projects{
+  display: inline-block;
+  text-align: center;
+  margin-right: 3rem;
+  opacity: 0.8;
+}
+.num{
+  color: rgb(69, 144, 230);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.btn{
+  background-color: rgb(69, 144, 230);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 1.5rem 3rem;
+  font-size: 20px;
+  margin-top: 2rem;
+  margin-right: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+/* end .account-info style */

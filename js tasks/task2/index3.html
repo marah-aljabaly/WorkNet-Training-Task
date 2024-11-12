@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array of object</title>
+</head>
+<body>
+  
+  <script>
+    // Find student Name, who got degree between 90 and 100
+    let studentArray = [
+      {name : 'marah', degree : 100},
+      {name : 'farah', degree : 95},
+      {name : 'raghed', degree : 50},
+      {name : 'sama', degree : 30},
+      {name : 'ahmed', degree : 85}
+    ];
+
+    let arrStd10090 = [];
+    studentArray.find(
+      function (obj) {
+        if (obj.degree <= 100 && obj.degree >= 90){
+          arrStd10090.push(obj.name);
+        }
+      }
+    );
+    console.log(`Students who got degree between [100-90] are: [${arrStd10090}]`);
+
+
+    //Print students names, who got a degree less than 60
+    let arrStdless60 = [];
+    studentArray.find(
+      function (obj) {
+        if (obj.degree < 60){
+          arrStdless60.push(obj.name);
+        }
+      }
+    );
+    console.log(`Students who got degree less than 60 are: [${arrStdless60}]`);  
+
+    
+    // Add a new student to the array [Use push()], and then use for…in to print all elements of the array.
+    // let name = 'sabreen';
+    // let degree = 40; 
+    // studentArray.push({name, degree});
+    studentArray.push({name:'sabreen', degree:40});
+    console.log("Each elements of the array are: ");
+    let arr1 = [];
+    for(let element in studentArray){
+      arr1.push(studentArray[element]);
+    }
+    console.log(arr1);
+    
+
+    // Remove the last student of the array [Use pop()], and then use for…of to print all elements of the array.
+    studentArray.pop();
+    console.log("An array after remove last item: ");
+    let arr2 = [];
+    for(let obj of studentArray){
+      arr2.push(obj)
+    }
+    console.log(arr2);
+
+
+    // Sort the array alphabetically based on the student name. 
+    studentArray.sort(function(a,b){
+      if(a.name  > b.name ) {
+        return 1;
+      }
+      else if(a.name  < b.name) {
+        return -1;
+      }
+      return 0;
+      });
+    console.log(studentArray);
+
+
+
+    // Use splice() function to add 2 new students after the second element of the array [Bonus].
+    studentArray.splice(2,0,{name:'eman', degree: 95},{name:'asmaa' , degree: 70})
+    console.log(studentArray);
+
+    
+    
+    // Use splice() function to remove 1 student after the third element in the array [Bonus].
+    studentArray.splice(3,1);
+    console.log(studentArray);
+  </script>
+</body>
+</html>

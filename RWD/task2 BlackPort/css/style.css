@@ -1,0 +1,57 @@
+body{
+  background-color: black;
+  color: white;
+}
+.first h1{
+  position: relative;
+  z-index: 1;
+}
+.first p{
+  position: relative;
+  z-index: 2;
+}
+.first img{
+  position: relative;
+  top: -3rem;
+}
+
+.container-bar {
+width: 100%;
+height: 1.3rem;
+background-color: lightgray;
+}
+
+.container-bar .bar1,
+.container-bar .bar2,
+.container-bar .bar3 {
+height: 100%;
+background-color: gray;
+}
+
+.container-bar .bar1 {
+width: 80%;
+}
+
+.container-bar .bar2 {
+width: 99%;
+}
+
+.container-bar .bar3 {
+width: 80%;
+}
+
+@media (min-width: 680px) {
+  body{
+    padding: 3rem;
+  }
+  .reputation .info{
+    position: relative;
+    top: 3rem;
+  }
+}
+
+@media (min-width: 565px) {
+  body{
+    padding: 2rem;
+  }
+}

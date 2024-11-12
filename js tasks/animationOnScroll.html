@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation with CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            height: 300vh; /* لإضافة مساحة للتمرير */
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin-top: 150vh; /* اجعل العنصر يظهر عند التمرير لأسفل */
+            background-color: teal;
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        /* تأثير الحركة عند إضافة class "show" */
+        .box.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<div class="box" id="box"></div>
+
+<script>
+    // إنشاء المراقب (observer) لمراقبة ظهور العنصر في الشاشة
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const box = entry.target;
+            if (entry.isIntersecting) { // عندما يكون العنصر مرئي في الشاشة
+                box.classList.add('show');
+                observer.unobserve(box); // وقف المراقبة بعد أن يظهر العنصر
+            }
+        });
+    });
+
+    // اختيار العنصر وتفعيل المراقبة
+    const box = document.getElementById('box');
+    observer.observe(box);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+*{
+  font-family: sans-serif, serif;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+main{
+  margin-top: 4rem;
+}
+img,
+button,
+a{
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+@media (min-width: 576px) {
+  main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 5rem;
+    flex-shrink: 0;
+  }
+  .interest,
+  .alert{
+    display: block !important;
+  }
+}

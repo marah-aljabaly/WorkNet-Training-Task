@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task1</title>
+
+  <style>
+    ul{
+      padding-left: 0;
+      background-color: rgb(58, 57, 57);
+      opacity: 0.87;
+      border-radius: 5px;
+      list-style: none;
+      width: fit-content;
+    }
+    ul li{
+      display: inline-block;
+      padding: 1.3rem 0;
+      transition: all 0.3s ease;
+    }
+    li:first-child{
+      background-color: green;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    a{
+      font-size: 1.5rem;
+      color: white;
+      opacity: 0.9;
+      padding: 1.3rem 2rem 1.35rem;
+    }
+    a:hover{
+      background-color:rgb(161, 163, 164);
+      color: black;
+    }
+    #first:hover{
+      border-radius: 5px 0 0 5px;
+    }
+    #last:hover{
+      border-radius: 0 5px 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="#" id="first">
+          <i class="fa-solid fa-house"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-earth-americas"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" id="last">
+          <i class="fa-solid fa-trash-can"></i>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+  <script src="https://kit.fontawesome.com/8e840fc7b4.js" crossorigin="anonymous"></script>
+</body>
+</html>

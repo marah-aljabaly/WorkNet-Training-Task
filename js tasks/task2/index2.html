@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array in JS</title>
+</head>
+<body>
+  
+  <script>
+    let grades = [60,100,10,15,85]; 
+    let sortedArray = grades.sort(function(a,b){return b-a});
+    console.log(`Sorted Array:[${sortedArray}]`);
+
+    //-------------------------------------
+
+    let highestDegree = sortedArray.find(function(parms){return parms <= 300});
+    console.log(`The highest degree is: ${highestDegree}`);
+
+  
+    //-----------------------------------------
+    
+    let arr = [];
+    grades.filter(
+      function (parms) {
+        if (parms <= 60){
+          arr.push(parms);
+          console.log(parms)
+        }
+      }
+    )
+    console.log(`All student degree less than ore equal 60 are:[${arr}]`);
+  
+    
+  </script>
+</body>
+</html>

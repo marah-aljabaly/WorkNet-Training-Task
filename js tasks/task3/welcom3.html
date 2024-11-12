@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+</head>
+<body>
+  <h1 id="welcome-tittle"></h1>
+
+  <script>
+    let tittle = document.getElementById('welcome-tittle');
+
+    //get user name from url as ?userName = --
+    let URLname = location.search.toString();
+    //slice URLname to get the important name
+    let startIndex = URLname.indexOf('=') +1;
+    let lastIndex = URLname.indexOf('&');
+    let userName = URLname.slice(startIndex, lastIndex).replace('+' , " ");
+    tittle.innerText = `Welcome, ${userName} in our website`;
+  </script>
+</body>
+</html>

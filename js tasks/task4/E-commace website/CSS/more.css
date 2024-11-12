@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif, serif;
+}
+.card{
+  width: 60%;
+  height: 365px;
+  margin: 3rem auto;
+  border-radius: 5px;
+  box-shadow: rgb(21, 25, 30) 10px 15px 30px -10px;
+}
+.card .product{
+  display: inline-block;
+}
+
+.card .product .imag{
+  display: inline-block;
+  margin-right: 4rem;
+  width: 30%;
+  height: 50%;
+  cursor: pointer;
+}
+.imag:hover{
+  transform: scale(1.1);
+  transform: translate(-10px, -10px);
+  transition: all 0.5s ease;
+}
+.card .product img{
+  width: 100%;
+  padding: 2rem;
+}
+.product .product-info{
+  width: 35%;
+  display: inline-block;
+  position: absolute;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.product h1{
+  font-size: 1.2rem;
+}
+.product-info .rating{
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+.product-info .price h4{
+  display: inline-block;
+  font-size: 1rem;
+  margin-right: 14.5rem;
+}
+.product-info .price .pre-price{
+  display: inline-block;
+  text-decoration: line-through;
+  color: rgb(136, 136, 136);
+}
+.product-info .buttons{
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.product-info .buttons button{
+  margin-right: 2rem;
+  margin-left: 1rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: 550;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.product-info .buttons button:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.description,
+.category,
+.reviews{
+  width: 95%;
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
+.category{
+  display: none;
+}
+#category,
+#reviews{
+  color:rgb(136, 136, 136);
+}

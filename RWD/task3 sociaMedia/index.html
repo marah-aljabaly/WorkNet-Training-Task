@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Profile</title>
+  <link rel="stylesheet" href="..//task3 sociaMedia/css/style.css">
+  <link rel="stylesheet" href="..//task3 sociaMedia/css/bootstrap.css">
+</head>
+
+<body class="bg-light">
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body pb-2 ps-4 pe-4 pt-2" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyLogo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item pe-3">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#">link</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+          <img src="..//task3 sociaMedia/image/posts.png" class="d-flex rounded-circle" alt="" width="50rem">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="ps-2 pe-2">
+    <!-- Profile Section -->
+    <div class="container-md profile">
+      <div class="row">
+        <div>
+          <!-- my profile -->
+          <div class="card shadow">
+            <div class="card-body text-center">
+              <h2 class="pb-2 fs-5">My Profile</h2>
+              <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" class="rounded-circle img-fluid" width="85rem">
+              <hr>
+              <p class="text-start fs-6">Designer, UI</p>
+              <p class="text-start fs-6">London, UK</p>
+              <p class="text-start fs-6">April 1, 1988</p>
+            </div>
+          </div>
+          <!-- collaps -->
+          <div class="mt-2">
+            <div>
+              <div class="firstElement">
+                <p class="w-100">
+                  <a class="btn btn-dark w-100 fs-6 p-2" style="border-radius: 0; position: relative; bottom: -1rem;" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">My Groups</a>
+                </p>
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <div class="card card-body" style="border-radius: 0;">
+                        Some placeholder content.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+          
+              <div class="secondElement">
+                <p class="w-100">
+                  <a class="btn btn-dark w-100 fs-6 p-2" style="border-radius: 0" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">My Events</a>
+                </p>
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                      <div class="card card-body" style="border-radius: 0; position: relative; top: -1rem;">
+                        Some placeholder content 
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+          
+              <div class="thirdElement">
+                <p class="w-100">
+                  <a class="btn btn-dark w-100 fs-6 p-2" style="border-radius: 0; position: relative; top: -1rem;" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">My Photos</a>
+                </p>
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                      <div class="card card-body pt-3" style="border-radius: 0; position: relative; top: -2rem;">
+                        <img src="..//task3 sociaMedia/image/posts.png" class="mb-2 w-100" alt="">
+                        <img src="..//task3 sociaMedia/image/posts.png" class="w-100">
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <!-- interest -->
+          <div class="card mb-4 rounded-1 shadow interest" style="display: none;">
+            <div class="card-body">
+              <div class="card-title fs-5 mb-2">
+                Interests
+              </div>
+              <div class="card-text">
+                <span class="badge text-bg-dark rounded-0">News</span>
+                <span class="badge text-bg-dark opacity-75 rounded-0">W3Schools </span>
+                <span class="badge text-bg-dark rounded-0">Labels</span>
+                <span class="badge text-bg-dark opacity-75 rounded-0">Games</span>
+                <span class="badge text-bg-dark rounded-0">Friends</span>
+                <span class="badge text-bg-dark opacity-75 rounded-0">Games</span>
+                <span class="badge text-bg-dark rounded-0">Friends</span>
+                <span class="badge text-bg-dark opacity-75 rounded-0">Food</span>
+                <span class="badge text-bg-dark rounded-0">Design</span>
+                <span class="badge text-bg-dark opacity-75 rounded-0">Art</span>
+                <span class="badge text-bg-dark rounded-0">Photos</span>
+              </div>
+            </div>
+          </div>
+          <!-- alert -->
+          <div class="alert alert-secondary alert-dismissible alert" role="alert"  style="display: none;">
+            <p><strong>Hey!!</strong></p>
+            People are looking at your profile. Find out who.
+            <button type="button" class="btn-close btn-sm bg-secondary rounded-0" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- postes Section -->
+    <div class="container">
+      <div class="ms-2 me-2">
+        <!-- post anything -->
+        <div class="mb-3">
+          <div class="card rounded-1 shadow">
+            <div class="card-body">
+              <h6 class="card-title text-secondary pb-1">Socil media platform by marah</h6>
+              <input type="text" value="Status: Feeling Blue" class="ps-3 pb-1 pt-1 w-100">
+              <button class="btn btn-dark rounded-0 mt-3 pe-4 ps-4 pb-2 pt-2">Post</button>
+            </div>
+          </div>
+        </div>
+        <!-- post1 -->
+        <div class="mb-3">
+          <div class="card rounded-1 shadow">
+            <div class="card-body ps-3">
+              <div class="top position-relative" >
+                <img src="..//task3 sociaMedia/image/myProfile.png" alt="" class="img-fluid rounded-circle p-2" width="80rem">
+                <span class="pe-4 fs-5">John Doe</span>
+                <span class="text-secondary pe-3 pt-2" style="position: absolute; right:0rem;">1 min</span>
+              </div>
+              <div class="">
+                <hr>
+                <p class="card-text ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi velit voluptatum, maxime ipsa corrupti fugiat repudiandae recusandae repellendus dignissimos ipsam in placeat eos architecto voluptatem, illo esse consequatur. Beatae, dolor!</p>
+                <div class="row pt-1 pb-2">
+                  <img src="..//task3 sociaMedia/image/posts.png" class="img-fluid w-50" alt="Work 1">
+                  <img src="..//task3 sociaMedia/image/posts.png" class="img-fluid w-50" alt="Work 1">
+                </div>
+                <input type="button" value="Like" class="btn btn-dark rounded-0 mt-3 me-2 ps-4 pe-4 pt-2 pb-2">
+                <input type="button" value="Comment" class="btn btn-dark rounded-0 mt-3 ps-4 pe-4 pt-2 pb-2">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post2 -->
+        <div class="mb-3">
+          <div class="card rounded-1 shadow">
+            <div class="card-body ps-3">
+              <div class="top position-relative" >
+                <img src="..//task3 sociaMedia/image/myProfile.png" alt="" class="img-fluid rounded-circle p-2" width="80rem">
+                <span class="pe-4 fs-5">John Doe</span>
+                <span class="text-secondary pe-3 pt-2" style="position: absolute; right: 0;">1 hr</span>
+              </div>
+              <div>
+                <hr>
+                <p class="card-text ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi velit voluptatum, maxime ipsa corrupti fugiat repudiandae recusandae repellendus dignissimos ipsam in placeat eos architecto voluptatem, illo esse consequatur. Beatae, dolor!</p>
+                <input type="button" value="Like" class="btn btn-dark rounded-0 mt-3 me-2 ps-4 pe-4 pt-2 pb-2">
+                <input type="button" value="Comment" class="btn btn-dark rounded-0 mt-3 ps-4 pe-4 pt-2 pb-2">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post3 -->
+        <div class="mb-3">
+          <div class="card rounded-1 shadow">
+            <div class="card-body ps-3">
+              <div class="top position-relative" >
+                <img src="..//task3 sociaMedia/image/myProfile.png" alt="" class="img-fluid rounded-circle p-2" width="80rem">
+                <span class="pe-4 fs-5">John Doe</span>
+                <span class="text-secondary pe-3 pt-2" style="position: absolute; right: 0;">1 min</span>
+              </div>
+              <div class="">
+                <hr>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi velit voluptatum, maxime ipsa corrupti fugiat repudiandae recusandae repellendus dignissimos ipsam in placeat eos architecto voluptatem, illo esse consequatur. Beatae, dolor!</p>
+                <img src="..//task3 sociaMedia/image/posts.png" alt="Work 1"  class="img-fluid d-block w-100">
+                <input type="button" value="Like" class="btn btn-dark rounded-0 mt-3 me-2 ps-4 pe-4 pt-2 pb-2">
+                <input type="button" value="Comment" class="btn btn-dark rounded-0 mt-3 ps-4 pe-4 pt-2 pb-2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- right Section -->
+    <div class="container-md right">
+      <div class="row">
+        <div>
+          <!-- events -->
+          <div class="card shadow mb-3">
+            <div class="card-body text-center">
+              <h4 class="fs-6 mb-3">Upcoming Events:</h4>
+              <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" class="img-fluid w-100">
+              <h3 class="fs-6 mt-4">Holiday</h3>
+              <p class="fs-6">Friday 15:00</p>
+              <a class="btn btn-secondary opacity-75 w-100 fs-5 p-2 mb-3" style="border-radius: 0; position: relative; bottom: -1rem;" href="#" role="button">Info</a>
+            </div>
+          </div>
+          <!-- request -->
+          <div class="card shadow mb-3">
+          <div class="card-body text-center">
+            <p class="fs-6 mb-3">Friend Request</p>
+            <img src="..//task3 sociaMedia/image/myProfile.png" alt="Avatar" class="img-fluid w-50">
+            <p class="fs-5">Jane Doe</p>
+            <a class="btn btn-success opacity-75 w-100 fs-5 p-2 mb-3" style="border-radius: 0; position: relative; bottom: -1rem;" href="#" role="button">Accept</a>
+            <a class="btn btn-danger opacity-75 w-100 fs-5 p-2 mb-3" style="border-radius: 0; position: relative; bottom: -1rem;" href="#" role="button">Delete</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>All Rights Reserved to Marah Aljabaly &copy; 2024</p>
+  </footer>
+
+  <script src="..//task3 sociaMedia/js/bootstrap.js"></script>
+</body>
+</html>

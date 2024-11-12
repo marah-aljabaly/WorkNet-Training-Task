@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON and ES6</title>
+
+  <style>
+    .data{
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #user-dropdown{
+      display: inline !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    Use AJAX to retrieve user data, and display: First Name, Last name and user avatar image (show the user image in an <img> tag) from the following test web API: https://reqres.in/api/users/1
+    a. Make a textbox where the user can enter user ID, and press display and then display the user with the given ID.
+    b. Use this web API: https://reqres.in/api/users to return all users data, and make a dropdown list and fill it with students name returning form the API. (Loop on them and display all users).
+    c. When user selects specific user (onchange event), display his data and image below the dropdown list.
+  -->
+
+  <label for="userId">Enter your ID: </label>
+  <input type="text" name="userId" id="userId" placeholder="Your ID">
+  <button id="dispaly-btn">Display user</button>
+  <div id="userData"></div>
+
+  <br><br>
+
+  <label for="user-dropdown">Select a student:</label>
+  <select id="user-dropdown" ></select>
+  <div id="userData2"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

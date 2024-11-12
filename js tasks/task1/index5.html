@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task1 - 5</title>
+</head>
+<body>
+  
+  <script>
+    let name = prompt("Enter your name: ");
+    while(!isNaN(name)){
+      name = prompt("Enter your name: ");
+    }
+
+    let birthYear = parseInt(prompt("Enter your birth year: "));
+    while(isNaN(birthYear) || birthYear > 2010){
+      birthYear = parseInt(prompt("Enter your birth year: "));
+    }
+
+    let currentYear = new Date().getFullYear();
+    alert(`Name: ${name}\n Birth year: ${birthYear}\n Age: ${currentYear - birthYear}`);
+    
+  </script>
+</body>
+</html>

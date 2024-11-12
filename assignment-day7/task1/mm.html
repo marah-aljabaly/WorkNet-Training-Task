@@ -1,0 +1,101 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>mm</p>
+
+  <script src="./script.js"></script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأفلام الشعبية</title>
+</head>
+<body>
+    <h1>الأفلام الشعبية</h1>
+    <div id="movies"></div>
+
+    <script>
+        const apiKey = 'ea758b4bfa5142eedc3d6a8d161b21e9'; // مفتاح API الخاص بك
+        const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const moviesContainer = document.getElementById('movies');
+                data.results.forEach(movie => {
+                    const posterPath = movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : '';
+                    const movieElement = `
+                        <div>
+                            <h2>${movie.title}</h2>
+                            <img src="${posterPath}" alt="${movie.title} Poster">
+                            <p>${movie.overview}</p>
+                            <p>تاريخ الإصدار: ${movie.release_date}</p>
+                            <p>التقييم: ${movie.vote_average}</p>
+                        </div>
+                    `;
+                    moviesContainer.innerHTML += movieElement;
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الفيلم</title>
+</head>
+<body>
+    <h1>تفاصيل الفيلم</h1>
+    <div id="movie"></div>
+    <div id="videos"></div>
+
+    <script>
+        const apiKey = 'ea758b4bfa5142eedc3d6a8d161b21e9'; // مفتاح API الخاص بك
+        const movieId = 157336; // معرف الفيلم
+        const url = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&append_to_response=videos`;
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                const movieContainer = document.getElementById('movie');
+                const posterPath = data.poster_path ? `https://image.tmdb.org/t/p/w500${data.poster_path}` : '';
+
+                const movieElement = `
+                    <h2>${data.title}</h2>
+                    <img src="${posterPath}" alt="${data.title} Poster">
+                    <p>${data.overview}</p>
+                    <p>تاريخ الإصدار: ${data.release_date}</p>
+                    <p>التقييم: ${data.vote_average}</p>
+                `;
+                movieContainer.innerHTML = movieElement;
+
+                // عرض مقاطع الفيديو
+                const videosContainer = document.getElementById('videos');
+                data.videos.results.forEach(video => {
+                    const videoElement = `
+                        <div>
+                            <h3>${video.name}</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/${video.key}" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    `;
+                    videosContainer.innerHTML += videoElement;
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html>

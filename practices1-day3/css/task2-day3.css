@@ -1,0 +1,42 @@
+body{
+  background-color: cadetblue;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+.container{
+  background-color: aliceblue;
+  margin: 0 auto;
+  width: 50%;
+  padding-bottom: 15px;
+}
+h1{
+  background-color:aliceblue;
+  height: 80px;
+  margin-top: 0;
+  text-align: center;
+  padding-top: 40px;
+}
+div{
+  margin:  20px 40px;
+}
+input{
+  height: 25px;
+}
+select{
+  height: 30px;
+  width: 180px;
+}
+textarea{
+  width: 520px;
+  height: 150px;
+}
+a{
+  text-decoration: none;
+  text-align: center;
+}
+button{
+  width: 120px;
+  height: 35px;
+  margin-right: 20px;
+  font-size: 18px;
+}
